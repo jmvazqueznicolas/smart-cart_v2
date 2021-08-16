@@ -1,3 +1,6 @@
-static/*
+static/img/*
+static/feature/mobilenet/*
+static/feature/resnet152/*
+static/feature/VGG16/*
 __pycache__/
 *.py[cod]
