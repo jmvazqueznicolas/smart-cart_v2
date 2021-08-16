@@ -10,9 +10,9 @@ This version extracts the feature vector of the given image files if the filenam
 are given as argument and if not, it searches in the whole folder for the image 
 files in order to create the feature vectors
 """
-modelo = int(input("""Select the model: \n 1.- Mobilenet \n 2.- Resnet152 \n 3.- VGG16 \n """))
 
 def main():
+    modelo = int(sys.argv[1])
     print("Running offline mobilenet with the given image files")    
     fe = FeatureExtractor(modelo)
     cwd = os.getcwd()
