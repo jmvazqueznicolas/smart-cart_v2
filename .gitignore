@@ -1,6 +1,6 @@
 static/img/*
-static/feature/mobilenet/*
-static/feature/resnet152/*
-static/feature/VGG16/*
+static/feature/mobilenet/*.npy
+static/feature/resnet152/*.npy
+static/feature/VGG16/*.npy
 __pycache__/
 *.py[cod]
