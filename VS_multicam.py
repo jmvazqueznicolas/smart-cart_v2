@@ -146,6 +146,7 @@ cv2.namedWindow('Camara 3')
 cv2.namedWindow('Resultado')
 cv2.createTrackbar('Dist', 'Camara 1', 0, 100, nothing)
 
+tiempo_ini = 0
 while terminar == False:
     # Se pregunta si las cámaras estan listas para ser leidas
     if ((flag1 == True) and (flag2 == True) and (flag3 == True)):
@@ -204,6 +205,11 @@ while terminar == False:
             result = cv2.putText(frames[0], str(int(100*min(scores))), org2, font, fontScale, color, thickness, cv2.LINE_AA)
         else:
             result = cv2.putText(frames[0], "Umbral no alcanzado", org, font, fontScale, color, thickness, cv2.LINE_AA)
+            print("Score minimo:", str(int(100*min(scores))))
 
         # Se muestra la cámara frontal para visualización del resultado
         cv2.imshow('Resultado', result)
+    curTime = time.time()
+    tiempo_tot = curTime - tiempo_ini
+    print("Tiempo", tiempo_tot)
+    tiempo_ini = curTime
