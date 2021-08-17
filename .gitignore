@@ -9,3 +9,4 @@ __pycache__/
 !static/img/carne_4.jpg
 !static/img/nutella_6.jpg
 !static/img/sabritas_8.jpg
+webcam.py
